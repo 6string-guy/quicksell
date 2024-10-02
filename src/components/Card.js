@@ -34,7 +34,7 @@ export const Card = ({ id, userId, tags, title, users }) => {
         </div>
 
         <p className="card_title">
-          <BoardIcon element={ticketStatus} />
+                { groupBy!=="priority" &&<BoardIcon element={ticketStatus} />}
           {`   ${  title}`}
         </p>
         <div className="cardTags">
