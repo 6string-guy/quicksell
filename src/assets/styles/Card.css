@@ -1,0 +1,142 @@
+.card_container {
+  width: 13vw; /* Card width */
+  margin-top: 1vw;
+  margin-bottom: 4vw;
+  border: 1px solid rgb(214, 213, 213);
+  border-radius: 8px;
+  padding: 1vw 1.5vw;
+  box-shadow: 0.2px 0.2px 5px rgba(128, 128, 128, 0.481);
+  background: rgba(255, 255, 255, 0.281);
+  font-family: sans-serif;
+  transition: transform .4s;
+}
+
+.card_id_no {
+  color: gray;
+  font-weight: 600;
+  font-size: 1vw; /* Reduced font size */
+}
+
+.card_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8vw;
+  padding-bottom: 0.4vw;
+}
+
+.card_container:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(5px);
+}
+
+.card_title {
+  font-weight: 600;
+  color: rgb(76, 76, 76);
+  font-size: 0.9vw; /* Adjusted font size */
+  margin: 0vw;
+  margin-bottom: 0.8vw;
+  
+  /* Truncate text after 2 lines with ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em; /* Adjust line height as needed */
+  max-height: 2.4em; /* This is 2 lines based on line-height */
+}
+
+.card_user_image {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+}
+
+.cardTags {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.card_tag1, .card_tag2 {
+  width: max-content;
+  padding: 0.2vw 0.5vw;
+  border-radius: 5px;
+  box-shadow: 0.2px 0.2px 5px rgba(128, 128, 128, 0.448);
+  color: grey;
+  font-size: 1vw; /* Reduced font size */
+}
+
+.card_dot {
+  position: relative;
+  top: 0.2vw;
+  color: rgb(179, 179, 179);
+}
+
+.no_cards_message {
+    text-align: center;
+    color: #999;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 750px) {
+  .card_container {
+    width: 30vw;
+    margin-top: 2vw;
+  }
+
+  .card_id_no {
+    font-size: 1.6vw; /* Adjusted size */
+  }
+
+  .card_title {
+    font-size: 1.2vw; /* Adjusted size */
+    margin-bottom: 1.6vw;
+  }
+
+  .cardTags {
+    gap: 1.8vw;
+  }
+
+  .card_tag1, .card_tag2 {
+    padding: 0.2vw 0.7vw;
+    font-size: 1.4vw; /* Adjusted size */
+  }
+
+  .card_dot {
+    font-size: 2vw; /* Adjusted size */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card_container {
+    width: 60vw;
+    margin-top: 3vw;
+    padding: 3.5vw;
+  }
+
+  .card_id_no {
+    font-size: 3vw; /* Adjusted size */
+  }
+
+  .card_title {
+    font-size: 3vw; /* Adjusted size */
+  }
+
+  .cardTags {
+    gap: 2.5vw;
+  }
+
+  .card_tag1, .card_tag2 {
+    padding: 0.8vw 1.8vw;
+    font-size: 3vw; /* Adjusted size */
+  }
+
+  .card_dot {
+    font-size: 3vw; /* Adjusted size */
+  }
+}

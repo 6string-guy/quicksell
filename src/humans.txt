@@ -1,0 +1,29 @@
+      
+
+This txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+
+
+Social Platforms:
+LinkedIn:- https://www.linkedin.com/in/sanskar-jaiswal-a1b728276/
+Github:- https://github.com/6string-guy
+
+_______________________________________________________________________________
+
+TECHNOLOGIES AND LIBRARIES USED 
+
+
+React
+Redux
+React-Icons
+
+_______________________________________________________________________________
+
+FONT
+
+Exo 2
+------------------------------------------------------------------------------
+                                 Thankyou!
