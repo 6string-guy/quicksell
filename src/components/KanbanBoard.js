@@ -22,7 +22,7 @@ const KanbanBoard = () => {
             <div className="heading_icons">
               <div>
                 {!user ? (
-                  <BoardIcon element={"element?.title.svg"} />
+                  <BoardIcon element={element?.title} />
                 ) : (
                   <div className="board_user_icon_container">
                     <img className="board_user_icon" src={image} alt="User" />
