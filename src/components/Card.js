@@ -25,31 +25,33 @@ export const Card = ({ id, userId, tags, title, users }) => {
     const groupBy = GroupStatus();
 
     return (
-        <div className="card_container">
-            <div className="card_icons">
-                {groupBy === "priority" &&
-                    <BoardIcon element={ticketStatus} />
-                }
-                <span className='card_id_no'>{id}</span>
-                {  }
-                {
-                    !user && (
-                        <img className='card_user_image' src={image}
-                            alt="User" />
-                    )
-                }
-            </div>
-            <p className='card_title'>{title}</p>
-            <div className="cardTags">
-                {groupBy !== "priority" && <div className="card_tag1">
-                    <BoardIcon element={priorities[ticketPriority]} />
-                </div>}
-                {
-                    tags?.map((item, index) => {
-                        return <div key={index} className="card_tag2"><GoDotFill className='card_dot' />{item}</div>
-                    })
-                }
-            </div>
+      <div className="card_container">
+        <div className="card_icons">
+          {groupBy === "priority" && <BoardIcon element={ticketStatus} />}
+          <span className="card_id_no">{id}</span>
+          {}
+          {!user && <img className="card_user_image" src={image} alt="User" />}
         </div>
-    )
+
+        <p className="card_title">
+          <BoardIcon element={ticketStatus} />
+          {`   ${  title}`}
+        </p>
+        <div className="cardTags">
+          {groupBy !== "priority" && (
+            <div className="card_tag1">
+              <BoardIcon element={priorities[ticketPriority]} />
+            </div>
+          )}
+          {tags?.map((item, index) => {
+            return (
+              <div key={index} className="card_tag2">
+                <GoDotFill className="card_dot" />
+                {item}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
 }

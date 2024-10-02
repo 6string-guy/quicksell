@@ -39,7 +39,7 @@ export const selectData = (groupBy, tickets, orderBy) => async (dispatch) => {
         myArr.push("Backlog");
         myArr.push("Todo");
         myArr.push("In progress");
-        myArr.push("Completed");
+        myArr.push("Done");
         myArr.push("Canceled");
         console.log(myArr);
 
