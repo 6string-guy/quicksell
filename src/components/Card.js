@@ -31,7 +31,7 @@ export const Card = ({ id, userId, tags, title, users }) => {
                     <BoardIcon element={ticketStatus} />
                 }
                 <span className='card_id_no'>{id}</span>
-                {/* Initial to be used here if user is false*/}
+                {  }
                 {
                     !user && (
                         <img className='card_user_image' src={image}
@@ -41,7 +41,6 @@ export const Card = ({ id, userId, tags, title, users }) => {
             </div>
             <p className='card_title'>{title}</p>
             <div className="cardTags">
-                {/* Display priority icon for non-priority grouping */}
                 {groupBy !== "priority" && <div className="card_tag1">
                     <BoardIcon element={priorities[ticketPriority]} />
                 </div>}

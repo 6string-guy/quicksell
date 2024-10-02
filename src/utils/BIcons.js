@@ -10,9 +10,9 @@ import { ReactComponent as Urg } from "../assets/images/SVG - Urgent Priority co
 import { ReactComponent as Backlog } from "../assets/images/Backlog.svg";
 import { ReactComponent as Todo } from "../assets/images/To-do.svg";
  import { ReactComponent as Np} from "../assets/images/No-priority.svg";
- import { ReactComponent as Hi} from "../assets/images/Img - High Priority.svg";
+ import { ReactComponent as Low} from "../assets/images/Img - High Priority.svg";
  import { ReactComponent as Med} from "../assets/images/Img - Medium Priority.svg";
- import { ReactComponent as Low} from "../assets/images/Img - Low Priority.svg";
+ import { ReactComponent as Hi} from "../assets/images/Img - Low Priority.svg";
  import { ReactComponent as Canceled} from "../assets/images/Cancelled.svg";
  import { ReactComponent as Display} from "../assets/images/Display.svg";
  import { ReactComponent as Done} from "../assets/images/Done.svg";

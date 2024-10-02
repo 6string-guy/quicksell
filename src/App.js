@@ -14,14 +14,31 @@ function App() {
 
   return (
     <React.Fragment>
-      {tickets.length===0 ?
-        <div>No Internet</div>
-        :
-        <div className='app_container'>
+      {tickets.length === 0 ? (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            margin: 0,
+          }}
+        >
+          <div
+            style={{
+              fontSize: "24px",
+              textAlign: "center",
+            }}
+          >
+            Loading...
+          </div>
+        </div>
+      ) : (
+        <div className="app_container">
           <Header />
           <KanbanBoard />
         </div>
-      }
+      )}
     </React.Fragment>
   );
 }

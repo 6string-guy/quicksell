@@ -13,12 +13,12 @@ const KanbanBoard = () => {
       {dataSelected?.map((item, id) => {
         const element = item[id];
 
-        // Ensure element is defined to prevent crashes
+        
         if (!element) return null;
 
         return (
           <div key={id} className="Board_container">
-            {/* Board Header */}
+           
             <div className="heading_icons">
               <div>
                 {!user ? (
@@ -28,10 +28,10 @@ const KanbanBoard = () => {
                     <img className="board_user_icon" src={image} alt="User" />
                   </div>
                 )}
-                {/* Title and card count */}
+               
                 <span className="board_title">
                   <span>{element?.title || "Untitled"}</span>
-                  {/* Show 0 if no cards */}
+                 
                   <span className="board_card_count">
                     {element?.value?.length || 0}
                   </span>
@@ -50,7 +50,7 @@ const KanbanBoard = () => {
                 />
               </div>
             </div>
-            {/* Cards */}
+           
             <div className="cards_container">
               {element?.value?.length > 0 ? (
                 element.value.map((item, ind) => (
